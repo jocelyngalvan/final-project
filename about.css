@@ -1,0 +1,145 @@
+.banner {
+  position: fixed;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 10px;
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+  border: solid;
+}
+
+.bannerRow {
+  display: inline-block;
+  width: 27%;
+  padding-top: 35px;
+  font-size: 15pt;
+  font-family: monospace;
+  border: solid;
+  padding: 10px;
+  margin: 5px;
+
+}
+.bannerlink {
+  text-align:center;
+}
+.bannerRow > a{
+  color: white;
+  text-decoration: none;
+
+
+}
+.bannerRow:hover {
+  color: LightSteelBlue;
+}
+.sideBar {
+  position: fixed;
+  top: 80px;
+  bottom: 0px;
+  width: 395px;
+  right: 10px;
+  padding: 2px;
+  background-color: black;
+  border: solid;
+}
+.sideBarRow{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 45pt;
+  font-family: monospace;
+  border: solid;
+  padding: 20px;
+  margin: 2px;
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+  text-align: center;
+}
+
+.sideBarRow > a{
+  color: white;
+  text-decoration: none;
+
+
+}
+.sideBarRow:hover {
+  color: LightSteelBlue;
+}
+
+#gif {
+  position: relative;
+  left: -7px;
+}
+
+.main {
+  margin-top: 0px;
+  margin-left: 80px;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 50pt;
+  font-family: monospace;
+  color: white;
+}
+.main:hover {
+  font-size: 60pt;
+}
+.discover {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 380px;
+  font-size: 20pt;
+  font-family: monospace;
+  color: white;
+}
+.about {
+  color:white;
+  font-size: 11pt;
+  font-family: monospace;
+  margin-left: 70px;
+  margin-right:500px;
+  border: solid;
+}
+.team {
+  margin-top: 30px;
+  padding-top: 0px;
+  padding-left: 325px;
+  font-size: 20pt;
+  font-family: monospace;
+  color: white;
+  text-decoration: underline;
+}
+
+
+h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+h1 {
+  margin:0;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.logo {
+  align-content: left;
+}
+.pics {
+  /* padding-left:60px; */
+  padding-top: 17px;
+  margin-right: 420px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  border:solid;
+  font-family: monospace;
+  color:white;
+
+}
+body {
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+}
+#icons {
+  margin-top:0px;
+  margin-bottom: -6px;
+}

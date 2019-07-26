@@ -1,0 +1,17 @@
+.games_title {
+  font-family:monospace;
+  font-size: 20pt;
+  text-align: center;
+  color: black;
+  border: solid;
+}
+body{
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png)
+}
+
+.quizzes {
+  margin-top: 70px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,102 @@
+.banner {
+  position: fixed;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 10px;
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+  border: solid;
+}
+
+.sideBar {
+  position: fixed;
+  top: 80px;
+  bottom: 0px;
+  width: 395px;
+  right: 10px;
+  padding: 0px;
+  background-color: black;
+  border: solid;
+}
+#gif{
+  position: relative;
+  left: -65px;
+}
+
+.bannerRow {
+  display: inline-block;
+  width: 27%;
+  padding-top: 35px;
+  font-size: 15pt;
+  font-family: monospace;
+  border: solid;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.bannerlink {
+  text-align:center;
+}
+.bannerRow > a{
+  color: white;
+  text-decoration: none;
+
+
+}
+.bannerRow:hover {
+  color: LightSteelBlue;
+}
+
+.sideBarRow{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 45pt;
+  font-family: monospace;
+  border: solid;
+  padding: 20px;
+  margin: 2px;
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+  text-align: center;
+
+
+}
+.sideBarRow > a{
+  color: white;
+  text-decoration: none;
+
+
+}
+.sideBarRow:hover {
+  color: LightSteelBlue;
+}
+
+.main {
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding-top: 200px;
+  font-size: 10pt;
+  font-family: monospace;
+  color: white;
+}
+.main:hover {
+  font-size: 16pt;
+}
+
+.logo {
+  align-content: left;
+}
+body {
+  background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
+}
+
+#icons {
+  margin-top:0px;
+  margin-bottom: -6px;
+}
+#phrase {
+  margin-left: 170px;
+  margin-bottom: 50px;
+}
