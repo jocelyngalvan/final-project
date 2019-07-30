@@ -7,7 +7,6 @@
   padding-bottom: 10px;
   background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
   border: solid;
-  border-width: thick;
 }
 
 .bannerRow {
@@ -19,7 +18,6 @@
   border: solid;
   padding: 10px;
   margin: 5px;
-  border-width: thick;
 
 }
 .bannerlink {
@@ -36,14 +34,13 @@
 }
 .sideBar {
   position: fixed;
-  top: 78px;
+  top: 80px;
   bottom: 0px;
   width: 395px;
   right: 10px;
-  padding:0px;
+  padding:2px;
   background-color: black;
   border: solid;
-  border-top: 10px;
 }
 .sideBarRow{
   padding-top: 30px;
@@ -52,7 +49,7 @@
   font-family: monospace;
   border: solid;
   padding: 20px;
-  margin: 0px;
+  margin: 2px;
   background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
   text-align: center;
 
@@ -107,22 +104,4 @@ body {
 #icons {
   margin-top:0px;
   margin-bottom: -6px;
-}
-#active{
-  border: solid;
-  border-color: LightSteelBlue;
-}
-#clockcontainer iframe{
-  margin: 0 auto;
-  /* height: 100%;
-  width: 100%; */
-}
-#clockcontainer{
-  margin: 0 auto;
-  margin-right: 410px;
-  /* display: block; */
-  /* width: 100%; */
-  /* margin-right: 410px; */
-  justify-content: center;
-  text-align: center;
 }

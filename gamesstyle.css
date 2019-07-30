@@ -1,0 +1,128 @@
+body {
+  background-image: url("sky.jpg.png"), linear-gradient(to right, darkgrey 10%, darkgrey 10%);
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.edge {
+  border-style: double;
+  border-width: 13px;
+}
+
+
+.box {
+  border-style: solid;
+  border-width: 3px;
+  text-align: center;
+  width: 1000px;
+  height: 408px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.gamespic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img:hover {
+  transform: scale(1.5)
+}
+
+.gamespic > img {
+  margin: 40px
+}
+
+.text {
+  text-align: center;
+}
+
+#gamestitle {
+  font-family: monospace;
+  font-size: 20pt;
+  text-align: center;
+  color: black;
+  border: solid;
+  position: fixed;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 60px;
+  background-color: white;
+}
+
+#home {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+#about {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  border: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+#contact {
+  position: absolute;
+  left: 270px;
+  top: 32px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#memes {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#quizzes {
+  position: absolute;
+  right: 180px;
+  top: 30px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#home:hover{
+  border-color: Lightsteelblue;
+}
+
+#about:hover{
+  border-color: Lightsteelblue;
+}
+
+#contact:hover{
+  border-color: Lightsteelblue;
+}
+
+#memes:hover{
+  border-color: Lightsteelblue;
+}
+
+#quizzes:hover{
+  border-color: Lightsteelblue;
+}

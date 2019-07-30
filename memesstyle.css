@@ -1,0 +1,333 @@
+head {
+  color: white;
+}
+
+body {
+  background-image: url("sky.jpg.png"), linear-gradient(to right, darkgrey 10%, darkgrey 10%);
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-right: 53px;
+  font-family: monospace;
+  font-size: 30px;
+  color: black;
+}
+
+.categories {
+  position: relative;
+  left: 100px;
+}
+
+.heading {
+  position: relative;
+  left: 610px;
+  display:inline-block;
+  padding:0px;
+  margin-bottom:-10px;
+  margin-left:-25px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#slideshowMeme {
+    /* margin: 50px auto; */
+    position: relative;
+    width: 350px;
+    height: 350px;
+    /* padding: 10px; */
+    z-index: -1;
+    margin: 0 auto;
+   /* box-shadow: 0 0 30px rgba(0,0,0,0.4); */
+}
+
+#slideshowMeme > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshowMeme > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+    width: 350px;
+    height: 350px;
+}
+
+
+
+#slideshowMmeme {
+    /* margin: 50px auto; */
+    position: relative;
+    width: 350px;
+    height: 350px;
+    /* padding: 10px; */
+    z-index: -1;
+    margin: 0 auto;
+   /* box-shadow: 0 0 30px rgba(0,0,0,0.4); */
+}
+
+#slideshowMmeme > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshowMmeme > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+
+#slideshowMmmeme {
+    /* margin: 50px auto; */
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+   /* box-shadow: 0 0 30px rgba(0,0,0,0.4); */
+}
+
+#slideshowMmmeme > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshowMmmeme > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+
+
+#slideshowMmmmeme {
+    /* margin: 50px auto; */
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+   /* box-shadow: 0 0 30px rgba(0,0,0,0.4); */
+}
+
+#slideshowMmmmeme > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshowMmmmeme > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+
+  .button {
+    background-color: black;
+    border: 2px solid #FFFFFF;
+    color: white;
+    padding: 15px 32px;
+    /* text-align: center; */
+    text-decoration-line: underline;
+    font-family: monospace;
+    font-size: 50px;
+    display: inline-block;
+    font-size: 16px;
+    /* margin-top:-16px; */
+    margin: 0 auto;
+    /* -webkit-transition-duration: 0.4s; /* Safari */
+    /* transition-duration: 0.4s; */ */
+  }
+
+  .button:hover {
+    background-color: darkgreen; /* Green */
+    border: none;
+    color: white;
+  }
+
+  .button:active {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+  }
+
+  .edge {
+    border-style: double;
+    border-width: 15px;
+    border-color: black;
+    position: relative;
+    left: 20px;
+    z-index: 300;
+  }
+
+  .somebutton {
+    /* margin-top: -50px; */
+    background-color: pink;
+    border: 5px solid #000000;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: monospace;
+    display: inline-block;
+    font-size: 60px;
+    margin-left: -30px;
+}
+
+.lifememes {
+  /* display:inline-block;
+  padding:0px;
+  margin-bottom:-12px; */
+  margin: 0 auto;
+  /* text-align: center;
+  justify-content: center; */
+}
+
+.schoolmemes {
+  /* display:inline-block;
+  padding:0px; */
+  /* margin-bottom:-16px;
+  margin-right: -15px; */
+  margin: 0 auto;
+}
+
+.foodmemes {
+  display:inline-block;
+  padding:0px;
+  margin-bottom:-15px;
+}
+
+.lovememes {
+  display:inline-block;
+  padding:0px;
+  margin-bottom:-17px;
+}
+
+.homebutton {
+  display:inline-grid;
+  /* padding-top:40px; */
+  /* margin-top:30px; */
+  margin-left:-200px;
+}
+
+.otherbuttons {
+  background-color: pink;
+  border: 5px solid #000000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: monospace;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.homebutton:hover {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+}
+
+.homebutton:active {
+  background-color: pink; /* Green */
+  border: none;
+  color: white;
+}
+
+.otherbuttons:hover {
+  background-color: #DC143C; /* Green */
+  border: none;
+  color: white;
+}
+
+.otherbuttons:active {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+}
+
+#gamestitle {
+  font-family: monospace;
+  font-size: 20pt;
+  text-align: center;
+  color: black;
+  border: solid;
+  position: fixed;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 60px;
+  background-color: white;
+}
+
+#home {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+#about {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  border: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+#contact {
+  position: absolute;
+  left: 270px;
+  top: 32px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#games {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#quizzes {
+  position: absolute;
+  right: 180px;
+  top: 30px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#home:hover{
+  border-color: Lightsteelblue;
+}
+
+#about:hover{
+  border-color: Lightsteelblue;
+}
+
+#contact:hover{
+  border-color: Lightsteelblue;
+}
+
+#memes:hover{
+  border-color: Lightsteelblue;
+}
+
+#quizzes:hover{
+  border-color: Lightsteelblue;
+}
+
+#SCHOOOL{
+  border: solid;
+  background-color: white;
+  color:black;
+  text-align: center;
+  /* margin: 0 auto; */
+}
