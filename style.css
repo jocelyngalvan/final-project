@@ -7,17 +7,19 @@
   padding-bottom: 10px;
   background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
   border: solid;
+  border-width: thick;
 }
 
 .sideBar {
   position: fixed;
-  top: 80px;
+  top: 78px;
   bottom: 0px;
   width: 395px;
   right: 10px;
   padding: 0px;
   background-color: black;
   border: solid;
+  border-top: 10px;
 }
 #gif{
   position: relative;
@@ -33,6 +35,7 @@
   border: solid;
   padding: 10px;
   margin: 5px;
+  border-width: thick;
 
 }
 
@@ -56,7 +59,7 @@
   font-family: monospace;
   border: solid;
   padding: 20px;
-  margin: 2px;
+  margin: 0px;
   background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png);
   text-align: center;
 
@@ -75,6 +78,7 @@
 .main {
   margin-top: 0px;
   margin-left: 30px;
+  margin-right: 410px;
   margin-bottom: 10px;
   padding-top: 200px;
   font-size: 10pt;
@@ -82,7 +86,7 @@
   color: white;
 }
 .main:hover {
-  font-size: 16pt;
+  font-size: 13pt;
 }
 
 .logo {
@@ -99,4 +103,51 @@ body {
 #phrase {
   margin-left: 170px;
   margin-bottom: 50px;
+}
+
+#active{
+  border: solid;
+  border-color: LightSteelBlue;
+}
+.tenor-gif-embed {
+  right:-40px;
+}
+
+#mainlogo{
+  width:100%;
+}
+
+#startbuttoncaption {
+  color:white;
+  width:70%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 16pt;
+}
+
+#startbutton{
+  margin-right: 410px;
+  justify-content: center;
+}
+
+#startbutton > button {
+  margin: auto;
+  display: block;
+  width: 100px;
+}
+#clockcontainer iframe{
+  margin: 0 auto;
+  /* height: 100%;
+  width: 100%; */
+}
+#clockcontainer{
+  margin: 0 auto;
+  margin-right: 410px;
+  /* display: block; */
+  /* width: 100%; */
+  /* margin-right: 410px; */
+  justify-content: center;
+  text-align: center;
 }

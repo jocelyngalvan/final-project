@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="compiled/flipclock.css">
+  <!-- <script src="main.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="compiled/flipclock.min.js"></script>
+  <title>About Me</title>
+  <style>
+    #clockdiv {
+          font-family: sans-serif;
+          color: #fff;
+          display: inline-block;
+          font-weight: 100;
+          text-align: center;
+          font-size: 15px;
+          display: flex;
+          flex-direction: row;
+      }
+
+    #clockdiv > div{
+        padding: 3px;
+        border-radius: 3px;
+        background: #00BF96;
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 8px;
+        border-radius: 3px;
+        background: #00816A;
+        display: inline-block;
+    }
+
+    .smalltext{
+        padding-top: 5px;
+        font-size: 8px;
+    }
+
+    #sad {
+      text-align: right;
+      float: right;
+    }
+    #clockimg {
+      vertical-align: middle;
+    }
+    .sadtimes {
+      float: right;
+      text-align: right;
+    }
+  </style>
+</head>
+<body onload="updateAll()">
+<div id="clockdiv">
+  <div id="clockimg">
+  <a href="#" onclick="reset()"><img src="clock.png" width=50px height=45px></a>
+  </div>
+    <div>
+    <span class="days"></span>
+    <div class="smalltext">Day(s)</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hour(s)</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Min(s)</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Sec(s)</div>
+  </div>
+</div>
+
+
+<script>
+// This example adds a search box to a map, using the Google Place Autocomplete
+// feature. People can enter geographical searches. The search box will return a
+// pick list containing a mix of places and predicted search terms.
+
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function reset() {
+  if (window.localStorage.getItem('time') == null) {
+    updateAll();
+  } else {
+    alert("Your time is not up yet!");
+  }
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = ('0' + t.days).slice(-2);
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      window.localStorage.removeItem('time');
+      alertMe();
+    }
+  }
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+function updateAll() {
+  if (window.localStorage.getItem('time') != null) {
+    var deadline = window.localStorage.getItem('time');
+  } else {
+    // create deadline 10 minutes from now
+    var timeInMinutes = 1;
+    var currentTime = Date.parse(new Date());
+    var deadline = new Date(currentTime + timeInMinutes*60*1000);
+
+    // store deadline in cookie for future reference
+    window.localStorage.setItem('time', deadline);
+  }
+  initializeClock("clockdiv", deadline);
+}
+
+function alertMe() {
+  window.alert("Time is up");
+}
+
+</script>
+</body>
+</html>

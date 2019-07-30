@@ -1,17 +1,95 @@
-.games_title {
+#games_title {
   font-family:monospace;
   font-size: 20pt;
   text-align: center;
   color: black;
   border: solid;
+  position:fixed;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 60px;
+  background-color: white;
 }
 body{
   background-image: url(file:///Users/tokenadmin/Desktop/sky.jpg.png)
 }
 
 .quizzes {
-  margin-top: 70px;
+  margin-top: 150px;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+#home {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border:solid;
+  border-color: black;
+  padding:10px;
+}
+#about {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  border:solid;
+  padding:10px;
+  border-color: black;
+}
+#contact {
+  position: absolute;
+  left: 270px;
+  top: 32px;
+  border:solid;
+  padding:10px;
+  border-color: black;
+}
+#memes {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  border:solid;
+  padding:10px;
+  border-color: black;
+}
+#games {
+  position: absolute;
+  right: 180px;
+  top: 30px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+}
+
+#home:hover {
+  border-color: LightSteelBlue;
+}
+
+#about:hover {
+  border-color: LightSteelBlue;
+}
+#contact:hover {
+  border-color: LightSteelBlue;
+}
+#memes:hover {
+  border-color: LightSteelBlue;
+}
+#games:hover {
+  border-color: LightSteelBlue;
+}
+#clockcontainer iframe{
+  margin: 0 auto;
+  /* height: 100%;
+  width: 100%; */
+}
+#clockcontainer{
+  margin: 0 auto;
+  margin-right: 410px;
+  /* display: block; */
+  /* width: 100%; */
+  /* margin-right: 410px; */
+  justify-content: center;
+  text-align: center;
 }
